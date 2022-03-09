@@ -1,0 +1,138 @@
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* basic selector */
+.intro{
+   background-color:chartreuse;
+}
+
+#intro{
+    background-color: burlywood;
+}
+
+/* child selector */
+.intro p {
+    color: red;
+}
+
+#intro > p {
+    color: green;
+}
+
+/* attribute selector */
+a[href] {
+    text-decoration: none;
+}
+
+input[type="button"] {
+    background-color: aqua;
+    border-radius: 2px;
+    cursor: pointer;
+    color: red;
+}
+
+/* pseudo-class */
+input[type="button"]:hover{
+    background-color: cadetblue;
+    color: black;
+}
+
+a[href]:hover {
+    color: rgb(201, 142, 33);
+}
+
+a[href]:focus {
+    color: red;
+}
+
+/* pseudo-emlement */
+.tille-page::first-letter {
+    font-size: 30px;
+}
+.tille-page::first-line {
+    color: red;
+}
+/* box-model */
+.box-model{
+    background-color: darkseagreen;
+    width: 400px;
+    height: 400px;
+    margin: 30px 50px;
+    padding: 20px;
+    border: 2px dashed darkblue;
+}
+
+.box-parent{
+    width: 400px;
+    height: 400px;
+    border: 2px solid blue;
+    margin: 40px;
+    background-color: rgb(255, 255, 91);
+    position: relative;
+}
+
+.box-child{
+    position: absolute;
+    border: solid 1px black;
+    background-color: black;
+    color: azure;
+    width: 40px;
+    height: 40px;   
+}
+
+.box1{
+    top: 40px;
+    left: 40px;
+}
+
+.box2{
+    top: 40px;
+    right: 40px;
+}
+
+.box3{
+    left: 40px;
+    bottom: 40px;
+}
+
+.box4{
+    right: 40px;
+    bottom: 40px;
+}
+
+/* text - font */
+
+.box-model{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(33, 65, 122);
+    text-align: center;
+    text-transform: uppercase; 
+    
+}
+
+.tille-intro{
+    position: relative;
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+.tille-intro::after{
+    font-family:"FontAwesome";
+    content: "-- \f21e --";
+    position: absolute;
+    top: 28px;
+    left: 48%;
+}
+
+/* Specificity CSS: độ ưu tiên css.
+-> giúp trình duyệt quyết định sẽ áp dụng thuộc tính css nào với 1 phần tử
+ khi có nhiều quy tắc css trỏ đến phần tử đó.
+ Độ ưu tiên từ cao đến thấp: inline > external > internal > tag  */
+
+ /* importan: độ ưu tiên cao nhất */
