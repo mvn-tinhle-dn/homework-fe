@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 /* Reset */
 
 * {
@@ -35,17 +37,19 @@ button {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 :root {
     --primary-color: #ff8400;
+    --while-color: #fff;
 }
 
 body {
     font-size: 14px;
     color: #222;
-    background-color: #fff;
+    background-color: var(--while-color);
     position: relative;
 }
 
@@ -55,7 +59,7 @@ body {
 
 .btn-primary {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--while-color);
 }
 
 .btn-primary:hover {
@@ -69,7 +73,6 @@ body {
 }
 
 .row {
-    width: 100%;
     margin: 0 -15px;
 }
 
@@ -82,6 +85,7 @@ body {
 
 .col-1,
 .col-2,
+.col-2-5,
 .col-3,
 .col-4,
 .col-5,
@@ -92,6 +96,10 @@ body {
 
 .col-2 {
     width: 16.6666667%;
+}
+
+.col-2-5 {
+    width: 20%;
 }
 
 .col-3 {
@@ -115,19 +123,25 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
+    box-shadow: 0 0 9px rgb(0 0 0 / 12%);
 }
 
 .header-nav {
     height: 86px;
-    background-color: #fff;
+    background-color: var(--while-color);
     position: relative;
     padding: 0 26px;
+    overflow: hidden;
 }
 
 .header-nav .logo {
     display: inline-block;
     line-height: 86px;
     float: left;
+}
+
+.header-nav .fa-bars {
+    display: none;
 }
 
 .header-nav .logo img {
@@ -151,7 +165,7 @@ body {
 
 .header-menu li a {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .header-menu li a:hover {
@@ -196,9 +210,11 @@ body {
 
 .section-slideshow .tille-intro {
     position: absolute;
-    color: #fff;
+    color: var(--while-color);
     top: 50%;
     transform: translateY(-50%);
+    font-family: sans-serif;
+    font-weight: 900;
 }
 
 .section-slideshow .tille-intro h5 {
@@ -209,7 +225,7 @@ body {
 .section-slideshow .tille-intro h1 {
     font-size: 52px;
     text-transform: uppercase;
-    font-weight: 750;
+    font-weight: 700;
 }
 
 .btn {
@@ -280,11 +296,15 @@ body {
     transform: translateY(-50%);
     left: 50px;
     font-size: 16px;
-    color: #fff;
+    color: var(--while-color);
+}
+
+.item-text h5 {
+    font-size: 22px;
 }
 
 .item-text h2 {
-    font-size: 26px;
+    font-size: 42px;
 }
 
 
@@ -358,8 +378,8 @@ body {
 
 .product-image>i {
     position: absolute;
-    left: 32px;
-    top: 20px;
+    left: 10px;
+    top: 10px;
     color: var(--primary-color);
     font-size: 20px;
     display: none;
@@ -471,7 +491,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #fff;
+    color: var(--while-color);
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
@@ -719,4 +739,193 @@ body {
 
 .footer-menu li:hover a {
     color: #56cfe1;
+}
+
+.footer-middle-col i {
+    display: none;
+}
+
+.middle-contact-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+
+/* Tablet */
+
+@media only screen and (max-width: 1023px) {
+    .header-nav {
+        height: 68px;
+    }
+    .header-nav .fa-bars {
+        display: inline-block;
+        font-size: 20px;
+        line-height: 68px;
+    }
+    .header-nav .logo {
+        float: unset;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 68px;
+    }
+    .header-menu {
+        display: none;
+    }
+    .header-actions {
+        display: none;
+    }
+    .intro-list {
+        height: unset;
+    }
+    .btn-next,
+    .btn-prev {
+        display: none;
+    }
+    .banner-imgage img {
+        height: 286px;
+        object-fit: cover;
+    }
+    .footer-middle-contact {
+        width: 50%;
+    }
+    .col-2 {
+        width: 25%;
+    }
+    .section-slideshow {
+        margin-top: 68px;
+    }
+    .footer-middle-signup {
+        margin-top: 46px;
+    }
+    .footer-bottom {
+        height: 172px;
+    }
+    .footer-bottom p {
+        display: block;
+        text-align: center;
+    }
+    .footer-menu {
+        text-align: center;
+        float: none;
+    }
+    .menu-mobile {
+        position: fixed;
+        height: 56px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: var(--while-color);
+        box-shadow: 0 0 9px rgb(0 0 0 / 12%);
+    }
+    .menu-mobile-item {
+        display: inline-block;
+        text-align: center;
+        line-height: 46px;
+        font-size: 24px;
+        color: #222;
+    }
+    .menu-mobile-item:first-child {
+        border-top: 4px solid var(--primary-color);
+        color: var(--primary-color);
+    }
+    .menu-mobile-item:hover {
+        color: var(--primary-color);
+        border-top: 4px solid var(--primary-color);
+    }
+    .menu-mobile-item p {
+        line-height: 0;
+        font-size: 14px;
+    }
+    .menu-mobile {
+        display: block;
+    }
+}
+
+
+/* Mobile - L */
+
+@media only screen and (max-width: 767px) {
+    .col-4 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 50%;
+    }
+    .slideshow-list .slideshow-item {
+        height: 316px;
+    }
+    .intro-item {
+        margin-top: 16px;
+    }
+    .intro-item:first-child {
+        margin-top: 0;
+    }
+    .item-img img {
+        width: 100%;
+    }
+    .section-banner h2 {
+        font-size: 56px;
+    }
+    .post-item {
+        margin-top: 16px;
+    }
+    .post-item:first-child {
+        margin-top: 0;
+    }
+    .service-item {
+        margin-top: 16px;
+    }
+    .service-item:first-child {
+        margin-top: 0;
+    }
+}
+
+
+/* Mobile - S */
+
+@media only screen and (max-width: 479px) {
+    .col-3 {
+        width: 100%;
+    }
+    .middle-contact-mobile {
+        display: block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+    }
+    .middle-contact-mobile h3 {
+        display: inline-block;
+    }
+    .middle-contact-mobile .fa-caret-down {
+        float: right;
+    }
+    .contact-list {
+        display: none;
+    }
+    .footer-middle-col {
+        width: 100%;
+        margin-top: 16px;
+    }
+    .footer-middle-col ul {
+        display: none;
+    }
+    .footer-middle-col h3 {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .footer-middle-col i {
+        display: inline-block;
+        font-size: 20px;
+        float: right;
+    }
+    .footer-middle-signup {
+        width: 100%;
+        text-align: center;
+    }
 }
