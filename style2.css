@@ -236,8 +236,10 @@ body {
 .section-products > .container {
 	position: relative;
 }
+.type-product-list {
+	justify-content: center;
+}
 .type-product-item {
-	display: inline-block;
 	font-size: 20px;
 	margin: 0 16px;
 	color: #878787;
