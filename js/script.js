@@ -69,7 +69,6 @@ function addCart($this) {
 	document.querySelector(".count-product-mobile").textContent = countProduct;
 	$this.disabled = true;
 	sessionStorage.setItem("cart", JSON.stringify(myCart));
-	console.log($this);
 }
 
 //ShowCountProduct
