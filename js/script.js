@@ -53,6 +53,7 @@ for (var i = 0; i < products.length; i++) {
 $productList.innerHTML = html;
 
 var myCart = [];
+
 //add card
 function addCart($this) {
 	var current = $this.parentElement.parentElement;
