@@ -17,21 +17,16 @@ axios
 function showUsers(items) {
 	const tbody = document.getElementById("tbody");
 	const content = items.map((item, index) => {
-		const userId = item.id;
-		const userEmail = item.email;
-		const userFirstName = item.first_name;
-		const userLastName = item.last_name;
-		const userAvt = item.avatar;
 		return `<tr>
     <td>${index + 1}</td>
-    <td><img src=${userAvt} /></td>
-    <td>${userFirstName} ${userLastName}</td>
-    <td>${userEmail}</td>
-    <td><button type = "button" onclick="deleteItem(${userId})">Delete</button></td>
+    <td><img src=${item.avatar} /></td>
+    <td>${item.first_name} ${item.last_name}</td>
+    <td>${item.email}</td>
+    <td><button type = "button" onclick="deleteItem(${item.id})">Delete</button></td>
     </tr>`;
 	});
 	tbody.innerHTML = content.join("");
-}
+};
 
 //Fetch
 fetch(url2)
@@ -48,22 +43,16 @@ fetch(url2)
 function showUsers2(users) {
 	const tbody = document.getElementById("tbody2");
 	const content = users.map((user, index) => {
-		const userId = user.id;
-		const userEmail = user.email;
-		const userFirstName = user.first_name;
-		const userLastName = user.last_name;
-		const userAvt = user.avatar;
-
 		return `<tr>
-        <td>${index + 1}</td>
-        <td><img src=${userAvt} /></td>
-        <td>${userFirstName} ${userLastName}</td>
-        <td>${userEmail}</td>
-        <td><button type = "button" onclick ="deleteItem(${userId})">Delete</button></td>
-      </tr>`;
+    <td>${index + 1}</td>
+    <td><img src=${user.avatar} /></td>
+    <td>${user.first_name} ${user.last_name}</td>
+    <td>${user.email}</td>
+    <td><button type = "button" onclick="deleteItem(${user.id})">Delete</button></td>
+    </tr>`;
 	});
 	tbody.innerHTML = content.join("");
-}
+};
 
 //Ajax
 function loadDoc() {
@@ -76,28 +65,23 @@ function loadDoc() {
 	};
 	http.open("GET", url, true);
 	http.send();
-}
+};
 loadDoc();
 
 //show user
 function showUsers3(items) {
 	const tbody = document.getElementById("tbody3");
 	const content = items.map((item, index) => {
-		const userId = item.id;
-		const userEmail = item.email;
-		const userFirstName = item.first_name;
-		const userLastName = item.last_name;
-		const userAvt = item.avatar;
 		return `<tr>
     <td>${index + 1}</td>
-    <td><img src=${userAvt} /></td>
-    <td>${userFirstName} ${userLastName}</td>
-    <td>${userEmail}</td>
-    <td><button type = "button" onclick="deleteItem(${userId})">Delete</button></td>
+    <td><img src=${item.avatar} /></td>
+    <td>${item.first_name} ${item.last_name}</td>
+    <td>${item.email}</td>
+    <td><button type = "button" onclick="deleteItem(${item.id})">Delete</button></td>
     </tr>`;
 	});
 	tbody.innerHTML = content.join("");
-}
+};
 
 //Delete
 function deleteItem(id) {
@@ -106,4 +90,4 @@ function deleteItem(id) {
 	})
 		.then((res) => console.log(res))
 		.catch((err) => console.log(err));
-}
+};
