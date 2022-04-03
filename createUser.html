@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style2.css"/>
+    <link rel="stylesheet" href="./css/createUser.css">
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>Kalles's Create</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="container-fluid">
+        <nav class="header-nav wrap-content">
+          <i class="fa-solid fa-bars"></i>
+          <a href="listUser.html" class="logo">
+            <img
+              src="https://themes.the4.co/kalles-html/assets/images/home-sport/footer-logo.png"
+              alt="logo"
+            />
+          </a>
+          <ul class="header-menu wrap-content">
+            <li><a href="./listUser.html">Users</a></li>
+            <li><a href="#">Create</a></li>
+          </ul>
+          <ul class="header-actions wrap-content">
+            <li class="header-action-item">
+              <a href=""><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li class="header-action-item">
+              <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container wrap-content">
+        <form action="" class="create-user">
+          <h3>Create User</h3>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" placeholder="First Name..." required><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="Last Name..." required><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="Email..." required><br>
+          <label for="address">Address:</label><br>
+          <input type="text" id="address" name="address" placeholder="Address..." required><br>
+          <label for="image">Image:</label><br>
+          <input type="file" id="image" name="image"required><br>
+          <input type="submit" id="btn-create" value="create User">
+        </form>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="footer-bottom">
+        <div class="container wrap-content">
+          <p>
+            Copyright © 2021 <span>Kalles</span> all rights reserved. Powered by
+            <a href="">The4</a>
+          </p>
+          <ul class="footer-menu wrap-content">
+            <li><a href="listUser.html">Home</a></li>
+            <li><a href="#">Create</a></li>
+          </ul>
+          <div class="menu-mobile">
+            <ul class="menu-mobile-list wrap-content">
+              <li class="menu-mobile-item col-4">
+                <a href="listUser.html">Home</a>
+              </li>
+              <li class="menu-mobile-item col-4">
+                <a href="#">Create</a>
+              </li>
+              <li class="menu-mobile-item col-4">
+                <a href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/create.js"></script>
+  </body>
+  
+</html>
