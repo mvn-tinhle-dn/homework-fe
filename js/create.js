@@ -35,8 +35,8 @@ buttonCreate.addEventListener("click", () => {
 
     //Reset input
     firstNameVL.value = "";
-		firstNameVL.focus();
-		lastNameVL.value = "";
+    firstNameVL.focus();
+    lastNameVL.value = "";
     emailVL.value = "";
     addressVL.value = "";
     imgVL.value = "";
@@ -45,14 +45,13 @@ buttonCreate.addEventListener("click", () => {
   // get data
   const usersJSON = sessionStorage.getItem("Users");
   const user = JSON.parse(usersJSON);
-	let countCheck = 0;
+  let countCheck = 0;
   //check ==> notification
   if (user.length > countCheck == true) {
-		countCheck += 1;
-		alert("Create success !");
+    countCheck += 1;
+    alert("Create success !");
   } else {
-		alert("Create Fail !");
-	};
-	
+    alert("Create Fail !");
+  };
 
 });
