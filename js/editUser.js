@@ -5,6 +5,7 @@ const user = JSON.parse(usersJSON);
 //Get id user
 const idUserJSON = sessionStorage.getItem("idUser");
 const idUser = JSON.parse(idUserJSON);
+console.log(idUser);
 
 //(id) => find user
 const userItem = user.filter((item) => item.id == idUser);

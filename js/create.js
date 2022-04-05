@@ -32,7 +32,6 @@ buttonCreate.addEventListener("click", () => {
     //add user sessionStorage
     sessionStorage.setItem("Users", JSON.stringify(users));
     count += 1;
-
     //Reset input
     firstNameVL.value = "";
     firstNameVL.focus();
