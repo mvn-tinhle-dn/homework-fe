@@ -13,14 +13,13 @@
 
     .contact-item {
       margin-top: 16px;
+			i {
+				padding: 0 8px 0 0;
+			}
     }
 
     .contact-item:first-child {
       margin-top: 0;
-    }
-
-    .contact-item>i {
-      padding: 0 8px 0 0;
     }
 
     .contact-icon {
@@ -129,4 +128,5 @@
   .menu-mobile {
     display: none;
   }
+	
 }

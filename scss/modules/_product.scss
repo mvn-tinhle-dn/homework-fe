@@ -35,6 +35,14 @@
   .product-image {
     position: relative;
     overflow: hidden;
+		i {
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			color: $primary-color;
+			font-size: 20px;
+			display: none;
+		}
   }
 
   .product-image:hover .item-btn {
@@ -63,16 +71,7 @@
   .product-image:hover .product-img {
     transform: scale(1.1);
   }
-
-  .product-image>i {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    color: $primary-color;
-    font-size: 20px;
-    display: none;
-  }
-
+	
   .item-btn {
     @include positionCenter("left");
     top: 30%;
@@ -153,4 +152,5 @@
     border: 1px solid #eaebed;
     margin-top: 86px;
   }
+	
 }
