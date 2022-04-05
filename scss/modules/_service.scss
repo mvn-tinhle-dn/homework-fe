@@ -1,0 +1,25 @@
+.section-services {
+  margin-top: 86px;
+
+  .service-item {
+    text-align: center;
+
+    i {
+      color: $primary-color;
+      font-size: 56px;
+    }
+  }
+
+  .service-content {
+    h3 {
+      font-size: 20px;
+      font-weight: 200;
+      margin-top: 16px;
+    }
+
+    p {
+      font-weight: 200;
+      margin-top: 8px;
+    }
+  }
+}

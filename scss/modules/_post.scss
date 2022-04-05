@@ -1,0 +1,49 @@
+.section-posts {
+  margin-top: 86px;
+
+  .post-list {
+    justify-content: space-between;
+  }
+
+  .post-item {
+    width: 30%;
+
+    a {
+      display: block;
+      overflow: hidden;
+    }
+
+    a>img {
+      transition: transform 0.5s;
+    }
+
+    a>img:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .post-tille {
+    margin-top: 22px;
+    font-size: 20px;
+    color: $black-color;
+  }
+
+  .post-tille:hover {
+    color: $primary-color;
+  }
+
+  .post-time,
+  .post-content {
+    color: $content-color;
+    margin-top: 22px;
+  }
+
+  .post-time>time {
+    color: $black-color;
+  }
+
+  .separation {
+    border: 1px solid $content-color;
+    margin-top: 86px;
+  }
+}

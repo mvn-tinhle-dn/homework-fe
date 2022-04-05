@@ -1,0 +1,46 @@
+.section-banner {
+  margin-top: 86px;
+  position: relative;
+
+  .banner-imgage {
+    display: block;
+    overflow: hidden;
+
+    img {
+      transition: transform 0.5s;
+    }
+
+    img:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  .tille-intro {
+    @include positionCenter("top");
+    color: $while-color;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 66px;
+  }
+
+  h2>span {
+    font-size: 36px;
+    display: block;
+  }
+
+  .btn-banner {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 14px;
+    background-color: $black-color;
+    margin-top: 36px;
+  }
+
+  .btn-banner:hover {
+    background-color: $primary-color;
+  }
+}
