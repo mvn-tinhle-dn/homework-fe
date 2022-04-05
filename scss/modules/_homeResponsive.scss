@@ -1,3 +1,4 @@
+// Tablet
 @include Responsive(1024px) {
   .header-nav {
     height: 68px;
@@ -110,6 +111,7 @@
   }
 }
 
+//Mobile - l
 @include Responsive(768px) {
   .col-3 {
     width: 50%;
@@ -160,6 +162,7 @@
   }
 }
 
+//Mobile - s
 @include Responsive(480px) {
   .col-4 {
     width: 100% !important;
@@ -238,5 +241,5 @@
     width: 100%;
     text-align: center;
   }
-	
+
 }
