@@ -2,93 +2,74 @@
   background-color: $black-color;
   margin-top: 86px;
   color: $while-color;
-
   .footer-middle {
     flex-wrap: wrap;
     padding-top: 86px;
-
     .footer-tille {
       font-weight: 700;
     }
-
     .contact-item {
       margin-top: 16px;
-
       i {
         padding: 0 8px 0 0;
       }
+			&:first-child {
+				margin-top: 0;
+			}
     }
-
-    .contact-item:first-child {
-      margin-top: 0;
-    }
-
     .contact-icon {
       display: inline-block;
       font-size: $font-size-base;
       margin: 0 8px;
+			&:first-child {
+				margin: 0 8px 0 0;
+			}
+			&:hover .fa-brands {
+				color: $primary-color;
+			}
     }
-
-    .contact-icon:first-child {
-      margin: 0 8px 0 0;
-    }
-
-    .contact-icon:hover .fa-brands {
-      color: $primary-color;
-    }
-
     .footer-middle-col {
       ul {
         margin-top: 22px;
-
         li {
           margin-top: 16px;
         }
+				li:hover a {
+					color: $hover-blue-color;
+				}
       }
-
       i {
         display: none;
       }
     }
-
-    .footer-middle-col li:hover a {
-      color: $hover-blue-color;
-    }
-
     .footer-middle-signup {
       p {
         margin-top: 22px;
       }
-
       .email-submit {
         margin-top: 16px;
-      }
-
-      .email-submit input {
-        width: 236px;
-        height: 36px;
-        padding: 0 5px;
-        font-size: 16px;
-        background-color: $black-color;
-        border: 1px solid $gray-color;
-        outline: 0;
-      }
-
+				input {
+					width: 236px;
+					height: 36px;
+					padding: 0 5px;
+					font-size: 16px;
+					background-color: $black-color;
+					border: 1px solid $gray-color;
+					outline: 0;
+				}
+			}
       .btn-submit {
         width: 86px;
         height: 36px;
       }
-
       .logo-list {
         margin-top: 16px;
-
         li {
           display: inline-block;
         }
       }
     }
   }
-
   .footer-bottom {
     margin-top: 86px;
     height: 62px;
@@ -99,35 +80,29 @@
       justify-content: space-between;
       align-items: center;
     }
-
-    p>span {
-      color: $primary-color;
-    }
-
-    p>a:hover {
-      color: $hover-blue-color;
-    }
-
+		p{
+			&>span {
+				color: $primary-color;
+			}
+			&>a:hover {
+				color: $hover-blue-color;
+			}
+		}
     .footer-menu {
       align-items: center;
-
       li {
         display: inline-block;
         margin: 0 10px;
       }
-
       li:hover a {
         color: $hover-blue-color;
       }
     }
   }
-
   .middle-contact-mobile {
     display: none;
   }
-
   .menu-mobile {
     display: none;
   }
-
 }

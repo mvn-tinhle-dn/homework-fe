@@ -1,17 +1,14 @@
 //Set position
 @mixin positionCenter($direction: "left") {
   position: absolute;
-
   @if $direction=="left" {
     left: 50%;
     transform: translateX(-50%);
   }
-
   @if $direction=="top" {
     top: 50%;
     transform: translateY(-50%);
   }
-
   @if $direction=="both" {
     left: 50%;
     top: 50%;
@@ -20,26 +17,8 @@
 }
 
 //Breakpoint Responsive
-$mobile-s: 480px;
-$mobile-l: 768px;
-$tablet: 1024px;
-
 @mixin Responsive($width-bb) {
-  @if $width-bb==$mobile-s {
     @media only screen and (max-width: ($width-bb - 1px)) {
       @content;
     }
-  }
-
-  @else if $width-bb==$mobile-l {
-    @media only screen and (max-width: ($width-bb - 1px)) {
-      @content;
-    }
-  }
-
-  @else if $width-bb==$tablet {
-    @media only screen and (max-width: ($width-bb - 1px)) {
-      @content;
-    }
-  }
 }
