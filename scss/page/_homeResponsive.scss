@@ -96,47 +96,37 @@
   .col-3 {
     width: 50%;
   }
-
   .col-4 {
     width: 100%;
   }
-
   .col-2-5 {
     width: 12%;
   }
-
   .section-intro {
     .item-text {
       top: 20%;
-
       p {
         font-size: 20px;
-
         &:first-child {
           font-size: 16px;
         }
       }
     }
   }
-
   .item-img {
     img {
       width: 100%;
     }
   }
-
   .service-list {
     display: block;
-
     .service-item {
       margin-top: 16px;
-
       &:first-child {
         margin-top: 0;
       }
     }
   }
-
   .footer-bottom {
     .wrap-content {
       flex-wrap: wrap;
@@ -151,74 +141,59 @@
   .col-4 {
     width: 100% !important;
   }
-
   .col-3 {
     width: 100%;
   }
-
   .section-intro {
     .intro-list {
       display: block;
       height: unset;
     }
-
     .intro-item {
       margin-top: 16px;
     }
   }
-
   .post-list {
     display: block;
   }
-
   .post-item {
     margin-top: 16px;
-
     &:first-child {
       margin-top: 0;
     }
   }
-
   .middle-contact-mobile {
     display: block;
     font-family: "Poppins", sans-serif;
     font-size: 20px;
-
     h3 {
       display: inline-block;
     }
-
     .fa-caret-down {
       float: right;
     }
-
     .contact-list {
       display: none;
     }
   }
-
   .footer-middle-col {
     width: 100%;
     margin-top: 16px;
-
     ul {
       display: none;
     }
-
     h3 {
       display: inline-block;
       font-family: "Poppins", sans-serif;
       font-size: 20px;
       font-weight: 400;
     }
-
     i {
       display: inline-block !important;
       font-size: 20px;
       float: right;
     }
   }
-
   .footer-middle-signup {
     width: 100%;
     text-align: center;
