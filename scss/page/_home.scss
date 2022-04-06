@@ -21,10 +21,10 @@
   }
   h2 {
     font-size: 66px;
-		&>span {
-			font-size: 36px;
-			display: block;
-		}
+    &>span {
+      font-size: 36px;
+      display: block;
+    }
   }
   .btn-banner {
     display: inline-block;
@@ -32,10 +32,10 @@
     font-size: 14px;
     background-color: $black-color;
     margin-top: 36px;
-		&:hover {
-			background-color: $primary-color;
-		}
-  }	
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
 }
 
 //intro
@@ -52,12 +52,11 @@
     a {
       width: 100%;
       height: 100%;
-
       img {
         transition: transform 0.2s;
-				&:hover {
-					transform: scale(1.1);
-				}
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }
@@ -66,11 +65,9 @@
     left: 50px;
     font-size: 16px;
     color: $while-color;
-
     p:first-child {
       font-size: 22px;
     }
-
     p {
       font-size: 42px;
     }
@@ -80,7 +77,6 @@
 //post
 .section-posts {
   margin-top: 86px;
-
   .post-list {
     justify-content: space-between;
   }
@@ -89,21 +85,21 @@
     a {
       display: block;
       overflow: hidden;
-			&>img {
-				transition: transform 0.5s;
-			}
-			&>img:hover {
-				transform: scale(1.05);
-			}
+      &>img {
+        transition: transform 0.5s;
+      }
+      &>img:hover {
+        transform: scale(1.05);
+      }
     }
   }
   .post-tille {
     margin-top: 22px;
     font-size: 20px;
     color: $black-color;
-		&:hover {
-			color: $primary-color;
-		}
+    &:hover {
+      color: $primary-color;
+    }
   }
   .post-time,
   .post-content {
@@ -131,14 +127,14 @@
     font-size: 20px;
     margin: 0 16px;
     color: $gray-color;
-		&:hover {
-			color: inherit;
-			border-bottom: $primary-color 2px solid;
-		}
-		&:first-child {
-			border-bottom: $primary-color 2px solid;
-			color: inherit;
-		}
+    &:hover {
+      color: inherit;
+      border-bottom: $primary-color 2px solid;
+    }
+    &:first-child {
+      border-bottom: $primary-color 2px solid;
+      color: inherit;
+    }
   }
   .products-list {
     margin-top: 46px;
@@ -158,25 +154,25 @@
       font-size: 20px;
       display: none;
     }
-		&:hover .item-btn {
-			display: block;
-		}
-		&:hover:after {
-			position: absolute;
-			content: "";
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: #e5e5e5;
-			opacity: 0.2;
-		}
-		&:hover .fa-solid {
-			display: block;
-		}
-		&:hover .product-img {
-			transform: scale(1.1);
-		}
+    &:hover .item-btn {
+      display: block;
+    }
+    &:hover:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #e5e5e5;
+      opacity: 0.2;
+    }
+    &:hover .fa-solid {
+      display: block;
+    }
+    &:hover .product-img {
+      transform: scale(1.1);
+    }
   }
   .product-img {
     transition: transform 0.2s;
@@ -193,17 +189,17 @@
     height: 42px;
     margin-top: 12px;
     line-height: 42px;
-		&:hover {
-			opacity: 0.7;
-		}
+    &:hover {
+      opacity: 0.7;
+    }
   }
   .product-tille {
     margin-top: 16px;
     color: $black-color;
-		&:hover {
-			color: $primary-color;
-			cursor: pointer;
-		}
+    &:hover {
+      color: $primary-color;
+      cursor: pointer;
+    }
   }
   .product-price {
     margin-top: 8px;
@@ -220,16 +216,16 @@
       border: 3px solid #e5e5e5;
       display: inline-block;
       margin: 0 4px;
-			&:hover {
-				opacity: 0.6;
-				cursor: pointer;
-			}
-			&:first-child {
-				background-color: red;
-			}
-			&:last-child {
-				background-color: blue;
-			}
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+      &:first-child {
+        background-color: red;
+      }
+      &:last-child {
+        background-color: blue;
+      }
     }
   }
   .btn-prev,
@@ -292,7 +288,6 @@
     }
   }
 }
-
 .slideshow-list {
   .slideshow-item {
     height: 532px;
@@ -324,9 +319,9 @@
     display: inline-block;
     margin: 0 5px;
     opacity: 0.5;
-		&:first-child {
-			opacity: 1;
-		}
+    &:first-child {
+      opacity: 1;
+    }
   }
 }
 
@@ -350,5 +345,5 @@
     color: #878787;
   }
 }
-@import './homeResponsive';
 
+@import './homeResponsive';
