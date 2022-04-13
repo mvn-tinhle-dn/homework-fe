@@ -1,4 +1,4 @@
-import UserInfo from "./UserInfo";
+import UserInfo from "../components/UserInfo";
 function Comment(props) {
   return (
     <div className="comment">

@@ -4,7 +4,7 @@ import './styles/global.scss';
 import './styles/comment.scss';
 import App from './views/App';
 import reportWebVitals from './reportWebVitals';
-import Comment from './components/Comment';
+import Comment from './views/Comment';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const author = {
