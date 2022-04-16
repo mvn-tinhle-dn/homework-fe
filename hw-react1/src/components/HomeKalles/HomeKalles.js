@@ -10,19 +10,19 @@ import PostsComponent from "./Post/PostsComponent";
 import ServiceComponent from "./ServicesComponent";
 
 export default class HomeKalles extends React.Component {
-	render() {
-		return (
-			<>
-				<HeaderComponent />
+  render() {
+    return (
+      <>
+        <HeaderComponent />
 
-				<main className="page-main">
-					<SlideShowComponent />
+        <main className="page-main">
+          <SlideShowComponent />
 
-					<IntroComponent />
+          <IntroComponent />
 
-					<ProductComponent />
+          <ProductComponent />
 
-					<BannerComponent />
+          <BannerComponent />
 
           <PageTitleComponent
             title="Top Selling"
@@ -42,13 +42,13 @@ export default class HomeKalles extends React.Component {
 						and long-term effects from increased muscle mass.`}
           />
 
-					<PostsComponent />
+          <PostsComponent />
 
-					<ServiceComponent />
-				</main>
+          <ServiceComponent />
+        </main>
 
-				<FooterComponent />
-			</>
-		);
-	}
+        <FooterComponent />
+      </>
+    );
+  }
 }
