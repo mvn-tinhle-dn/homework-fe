@@ -1,10 +1,13 @@
+import React from 'react';
 import '../styles/App.scss';
-import HomeKalles from './HomeKalles';
+import HomeKalles from '../components/HomeKalles/HomeKalles';
 
-function App() {
-  return (
-   <HomeKalles />
-  );
+class App extends React.Component {
+  render() {
+		return (
+			<HomeKalles />
+		 );
+	}
 }
 
 export default App;
