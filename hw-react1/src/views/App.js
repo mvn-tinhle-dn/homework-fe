@@ -1,26 +1,36 @@
-import logo from './logo.svg';
-import '../styles/App.scss';
+import React from "react";
+import "../styles/App.scss";
+import About from "../Page/About";
+import Home from "../Page/Home";
+export default class App extends React.Component {
+  state = {
+    currentPage: "home",
+  };
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <h1>Hello World!</h1>
-      </header>
-    </div>
-  );
+  handleSwitchPage(e, name) {
+    e.preventDefault();
+    this.setState({
+      currentPage: name,
+    });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <ul className="listPage">
+          <li>
+            <a href="." onClick={(e) => this.handleSwitchPage(e, "home")}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="." onClick={(e) => this.handleSwitchPage(e, "about")}>
+              About
+            </a>
+          </li>
+        </ul>
+        {this.state.currentPage === "home" ? <Home /> : <About />}
+      </div>
+    );
+  }
 }
-
-export default App;
