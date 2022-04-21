@@ -62,7 +62,6 @@ export default class FormComponent extends React.Component {
   handleDeleteAUser = (user) => {
     let currentUser = this.state.arrUser;
     currentUser = currentUser.filter((item) => item.id !== user.id);
-    console.log(currentUser);
     this.setState({ arrUser: [...currentUser] });
   };
 
