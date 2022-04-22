@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
+form {
+  max-width: 468px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  background-color: rgb(244, 240, 240);
+  padding: 16px;
+  border-radius: 8px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  h2 {
+    text-align: center;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .form-item {
+    width: 100%;
+    margin-bottom: 12px;
+
+    label {
+      display: block;
+      font-weight: 600;
+    }
+
+    input:not([type="radio"]):not([type="checkbox"]),
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"],
+    select:hover {
+      cursor: pointer;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    button {
+      width: 100%;
+      height: 36px;
+      background-color: #111;
+      color: white;
+      border-radius: 4px;
+
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .tbody {
+    margin-bottom: 46px;
   }
-  to {
-    transform: rotate(360deg);
+
+  th,
+  td {
+    border: 1px solid #ccc;
+  }
+
+  th {
+    background-color: #111;
+    color: #fff;
+  }
+
+  td:last-child {
+    text-align: center;
+  }
+}
+
+.btn-delete {
+  background-color: red;
+  color: #fff;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
   }
 }
