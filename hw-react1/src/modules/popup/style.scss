@@ -1,0 +1,45 @@
+.popup {
+  min-width: 379px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  box-shadow: 2px 2px #ccc;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.popup-header {
+  border-bottom: 1px solid #ccc;
+  padding: 0 16px;
+}
+
+.popup-content {
+  padding: 0 16px;
+}
+
+.popup-footer {
+  border-top: 1px solid #ccc;
+  text-align: right;
+
+  .btn {
+    padding: 4px 16px;
+    margin: 8px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .btn-cancel {
+    color: black;
+    background-color: #ccc;
+  }
+
+  .btn-delete {
+    background-color: red;
+  }
+
+}
