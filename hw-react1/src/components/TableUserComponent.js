@@ -2,7 +2,7 @@ import React from "react";
 import TableItemComponent from "./TableItemComponent";
 export default class TableUserComponent extends React.Component {
   render() {
-    const { arrUser, handleDeleteAUser } = this.props;
+    const { arrUser, getIdUser } = this.props;
     return (
       <table>
         <thead>
@@ -18,7 +18,7 @@ export default class TableUserComponent extends React.Component {
         </thead>
         <TableItemComponent
           arrUser={arrUser}
-          handleDeleteAUser={(item) => handleDeleteAUser(item)}
+          getIdUser={(item) => getIdUser(item)}
         />
       </table>
     );

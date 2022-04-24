@@ -2,7 +2,7 @@ import React from "react";
 
 export default class TableItemComponent extends React.Component {
   render() {
-    const { arrUser, handleDeleteAUser } = this.props;
+    const { arrUser, getIdUser } = this.props;
     return (
       <tbody>
         {arrUser.map((item, index) => (
@@ -14,7 +14,7 @@ export default class TableItemComponent extends React.Component {
             <td>{item.gender === 0 ? `Male` : `FeMale`}</td>
             <td>{item.info}</td>
             <td>
-              <button className="btn-delete" onClick={() => handleDeleteAUser(item)}>
+              <button className="btn-delete" onClick={() => getIdUser(item)}>
                 Delete
               </button>
             </td>

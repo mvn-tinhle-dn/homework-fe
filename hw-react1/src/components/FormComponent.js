@@ -61,7 +61,7 @@ export default class FormComponent extends React.Component {
     }
   }
 
-  handleDeleteAUser = (user) => {
+  getIdUser = (user) => {
     this.setState({ confirm: true, id: user.id });
   };
 
@@ -70,7 +70,7 @@ export default class FormComponent extends React.Component {
       confirm: false,
     });
   }
-  handleOnConfirm() {
+  handleOnConfirmDelete() {
     this.setState({
       confirm: false,
     });
@@ -178,12 +178,12 @@ export default class FormComponent extends React.Component {
         </form>
         <TableUserComponent
           arrUser={this.state.arrUser}
-          handleDeleteAUser={(user) => this.handleDeleteAUser(user)}
+          getIdUser={(user) => this.getIdUser(user)}
         />
         <PopupComponent
           confirm={this.state.confirm}
           handleOnCancel={() => this.handleOnCancel()}
-          handleOnConfirm={() => this.handleOnConfirm()}
+          handleOnConfirmDelete={() => this.handleOnConfirmDelete()}
           submit="Delete"
         ></PopupComponent>
       </>

@@ -5,7 +5,7 @@ export default class PopupComponent extends React.Component {
     const {
       confirm,
       handleOnCancel,
-      handleOnConfirm,
+      handleOnConfirmDelete,
       cancel = "cancel",
       submit = "submit",
     } = this.props;
@@ -23,7 +23,7 @@ export default class PopupComponent extends React.Component {
               <button className="btn btn-cancel" onClick={handleOnCancel}>
                 {cancel}
               </button>
-              <button className="btn btn-delete" onClick={handleOnConfirm}>
+              <button className="btn btn-delete" onClick={handleOnConfirmDelete}>
                 {submit}
               </button>
             </div>
