@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import TableUserComponent from "../table";
 import { toast } from "react-toastify";
 import useField from "../../utils/useField";
@@ -10,6 +10,7 @@ export default function FormComponent() {
   const gender = useField("radio");
   const info = useField("");
   const agree = useField("checkbox");
+  const nameRef = useRef()
 
   const [data, setData] = useState([]);
 
@@ -38,9 +39,9 @@ export default function FormComponent() {
       setData([...data, user]);
       toast.success("Register Success!");
       event.target.reset();
-    }
-  };
-
+      nameRef.current.focus();      
+    };
+  }
   const handleDeleteAUser = (userItem) => {
     const currentUser = data.filter((item) => userItem.id !== item.id);
     setData(currentUser);
@@ -53,6 +54,7 @@ export default function FormComponent() {
         <div className="form-item">
           <label htmlFor="email">Email</label>
           <input
+            ref={nameRef}
             id="email"
             name="email"
             placeholder=" Register123@gmail.com..."
