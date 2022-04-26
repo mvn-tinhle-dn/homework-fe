@@ -37,7 +37,6 @@ export default function FormComponent() {
       };
       setData([...data, user]);
       toast.success("Register Success!");
-
       event.target.reset();
     }
   };
@@ -76,7 +75,7 @@ export default function FormComponent() {
         <div className="form-item">
           <label>Country</label>
           <select name="country" {...country} required>
-            <option>Chose Country</option>
+            <option>Choose Country</option>
             <option>VietNam</option>
             <option>Japan</option>
             <option>China</option>

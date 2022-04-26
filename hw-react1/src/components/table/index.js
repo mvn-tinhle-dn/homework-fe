@@ -2,7 +2,6 @@ import React from "react";
 
 export default function TableUserComponent(props) {
   const { arrUser, handleDeleteAUser } = props;
-  console.log(arrUser)
   return (
     <table>
       <thead>
