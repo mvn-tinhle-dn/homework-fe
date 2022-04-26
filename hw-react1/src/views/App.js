@@ -1,7 +1,8 @@
 import "../styles/App.scss";
-import FormComponent from "../components/FormComponent";
+import FormComponent from "../components/form";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import UserList from "../components/listuser";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         draggable
         pauseOnHover
       />
+      <UserList></UserList>
     </div>
   );
 }

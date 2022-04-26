@@ -1,0 +1,24 @@
+.user-list {
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-page {
+  text-align: center;
+  margin-bottom: 68px;
+  button {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    min-width: 50px;
+    min-height: 26px;
+    margin: 16px;
+    border-radius: 4px;
+    &:hover {
+      background-color: antiquewhite;
+      cursor: pointer;
+    }
+  }
+  
+}
