@@ -1,0 +1,67 @@
+.container {
+  .btn-login {
+    width: 100%;
+    display: block;
+  }
+
+  form {
+    border: 3px solid #f1f1f1;
+  }
+
+  input[type=email],
+  input[type=password] {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    margin: 8px 0;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    background-color: #04AA6D;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+
+  img.avatar {
+    width: 16%;
+    border-radius: 50%;
+  }
+
+  .container-login {
+    padding: 16px;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  .link-action {
+    color: #04AA6D;
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      float: none;
+      display: block;
+    }
+  }
+}
