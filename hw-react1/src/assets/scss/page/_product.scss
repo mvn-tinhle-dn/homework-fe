@@ -1,0 +1,43 @@
+.product-list {
+  margin: 86px 0;
+
+  li {
+    box-shadow: 2px 2px rgb(246, 241, 241);
+    transition: transform .2s;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 26px;
+    padding: 5px;
+    width: 22%;
+
+    .product-image {
+      height: 150px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .product-info {
+      text-align: left;
+      padding: 0 16px;
+      margin-top: 16px;
+
+      .product-title {
+        color: black;
+      }
+
+      .product-title:hover {
+        cursor: pointer;
+        color: rgb(14, 179, 235);
+      }
+
+      .product-price {
+        color: red;
+      }
+    }
+
+  }
+}
