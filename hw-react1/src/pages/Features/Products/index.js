@@ -35,7 +35,7 @@ export default function Products() {
                 </h3>
                 <p className="product-price">{item.price} $</p>
                 <span
-                  className={`${favs.includes(item.id) ? "active" : ""}`}
+                  className={`${favs.includes(item.id) ? "active" : ""} product-heart`}
                   onClick={(e) => handleClickFav(e, item.id)}
                 >
                   <FaHeart />

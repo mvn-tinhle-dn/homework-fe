@@ -18,24 +18,30 @@ export default function ProductsDetail() {
     e.preventDefault();
     dispatch(addCart(item));
   };
-
+    
   return (
     <div className="container">
-      <div className="product-detail wrap-content">
-        <img className="product-image" src={product.image} alt={product.title} />
-        <div className="product-info">
-          <h3 className="product-title">{product.title}</h3>
-          <p className="product-price">Price: {product.price} $</p>
-          <p className="product-category">{product.category}</p>
-          <p className="product-description">{product.description}</p>
-          <button
-            className="btn btn-buy"
-            onClick={(e) => handleClickAddCart(e, product)}
-          >
-            Add cart
-          </button>
-        </div>
-      </div>
+      {product.id === undefined ?
+        (
+          <div> Loading... </div>
+        ) :
+        (
+          <div className="product-detail wrap-content">
+            <img className="product-image" src={product.image} alt={product.title} />
+            <div className="product-info">
+              <h3 className="product-title">{product.title}</h3>
+              <p className="product-price">Price: {product.price} $</p>
+              <p className="product-category">{product.category}</p>
+              <p className="product-description">{product.description}</p>
+              <button
+                className="btn btn-buy"
+                onClick={(e) => handleClickAddCart(e, product)}
+              >
+                Add cart
+              </button>
+            </div>
+          </div>
+        )}
     </div>
   );
 }
