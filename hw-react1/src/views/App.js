@@ -9,6 +9,7 @@ import Footer from "../components/layouts/Footer/index.js";
 import '../assets/scss/styles.scss';
 import PrivateRoute from "../core/guards/PrivateRoute/index.js";
 
+
 const Auth = React.lazy(() => import('../pages/Auth/index.js'));
 const Account = React.lazy(() => import('../pages/Account/index.js'));
 const Features = React.lazy(() => import('../pages/Features/index.js'));
