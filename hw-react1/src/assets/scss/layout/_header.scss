@@ -1,0 +1,68 @@
+.header {
+  background-color: #282c34;
+  position: fixed;
+  height: 68px;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  &-logo {
+    width: 100px;
+    animation: App-logo-spin infinite 20s linear;
+  }
+
+  &-list {
+    line-height: 68px;
+    font-size: 40px;
+    color: white;
+    height: 100%;
+
+    li {
+      margin: 0 16px;
+
+      a:hover {
+        color: #61dafb;
+      }
+    }
+  }
+
+  &-actions-list {
+    float: right;
+
+    li {
+      color: white;
+      margin-right: 16px;
+      line-height: 68px;
+      position: relative;
+
+      svg {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .active {
+    color: #61dafb;
+  }
+
+  .count-fav {
+    position: absolute;
+    top: 8px;
+    right: -12px;
+    padding: 5px;
+    line-height: 8px;
+    border-radius: 50%;
+    background-color: red;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

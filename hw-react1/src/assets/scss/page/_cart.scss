@@ -1,0 +1,26 @@
+.cart-table {
+  width: 100%;
+  margin-top: 26px;
+  border-collapse: collapse;
+  text-align: center;
+
+  thead {
+    background-color: antiquewhite;
+  }
+
+  .product-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  tr {
+    height: 50px;
+    padding: 5px;
+
+  }
+}
+
+.cart-title {
+  font-size: 26px;
+
+}
