@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { apiProductGetList } from "../../../api/product/product.api";
 import { toggle } from "../../../stores/favSlice";
 
 export default function Products() {
@@ -10,8 +11,8 @@ export default function Products() {
   const favs = useSelector((state) => state.favorite.value);
 
   useEffect(() => {
-    fetch(`https://fakestoreapi.com/products`)
-      .then((response) => response.json())
+    apiProductGetList()
+      .then((response) => response.data)
       .then((result) => setProducts(result));
   }, []);
 
@@ -22,6 +23,7 @@ export default function Products() {
 
   return (
     <div className="container">
+      <h1 className="products-title">Menu Products</h1>
       <ul className="product-list wrap-content wrap wrap-around">
         {products.map((item) => {
           return (

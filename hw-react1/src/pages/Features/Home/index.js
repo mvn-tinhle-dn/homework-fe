@@ -31,7 +31,7 @@ export default function Home() {
       fav: false,
     },
   ]);
-
+  
   return (
     <>
       <div className="slide-show container-fluid">
