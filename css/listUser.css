@@ -1,0 +1,89 @@
+.tb-info {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.page-main {
+  position: relative;
+}
+
+.tb-info th,
+td {
+  padding: 8px;
+  text-align: center;
+  background-color: antiquewhite;
+  border-bottom: 1px solid white;
+}
+
+.title-tb {
+  font-size: 26px;
+  font-family: "Courier New", Courier, monospace;
+  color: var(--primary-color);
+}
+
+.tb-info th {
+  background-color: var(--primary-color);
+  color: var(--while-color);
+}
+
+tr td:nth-child(3) {
+  width: 50px;
+}
+
+tr td:nth-child(3) img {
+  width: 62px;
+}
+
+td>button {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 6px 36px;
+}
+
+td>button:hover {
+  background-color: var(--primary-color);
+}
+
+td .action-icon {
+  margin: 0 12px;
+}
+
+td .action-icon:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.fa-pencil:focus .create-user {
+  display: block;
+}
+
+.action-page {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action-page input {
+  outline: none;
+  min-width: 200px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.action-page input::placeholder {
+  color: var(--primary-color);
+}
+
+.btn-search {
+  width: 32px;
+  height: 32px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
+.btn-search:hover {
+  color: var(--while-color);
+  opacity: 0.9;
+}
