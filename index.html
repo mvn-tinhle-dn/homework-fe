@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="script.js"></script>
+	<title>Ex Js</title>
+</head>
+<body>
+	<h3>What are the differences between a variable that is: `null`, `undefined`?</h3>
+	<p>
+		NULL: có nghĩa là giá trị rỗng hoặc giá trị không tồn tại. Nó có thể được sử dụng để gán cho một biến như là một đại diện không có giá trị. <br>
+		UNDEFINED: có nghĩa là không xác định, là khi 1 biến được khai báo, nhưng lại không được gắn bất kì giá trị nào.<br>
+		typeof undefined -> undefined<br>
+		typeof null -> object
+	</p>
+	<h3>What is `use strict`? what are the advantages and disadvantages to using it?</h3>
+	<P>
+		"use strict" là từ khóa để bật chế độ Strict Mode, tạm dịch là chế độ nghiêm ngặt của JavaScript,<br>
+		bắt đầu xuất hiện từ phiên bản ECMAScript 5.<br>
+		Khi khai báo use strict thì tất cả các dòng code ở phía dưới dòng khai báo use strict <br>
+		sẽ được JavaScript quản lý nghiêm ngặt hơn về mặt cú pháp.<br>
+		Điều này được yêu cầu cực kỳ khắt khe ở các dự án phức tạp để tránh các lỗ hổng tiềm tàng.<br>
+		Từ khóa use strict có thể đươc sử dụng ở hai vị trí đó là:<br>
+		Đặt ở đầu file hay đầu code JavaScript có tác dụng cho toàn bộ code JavaScript trong file đó<br>
+		Đặt ở đầu một hàm có tác dụng cho code trong hàm đó mà thôi.<br>
+		Lợi Thế:
+		<ul>
+			<li>Ngăn chặn sử dụng, và báo lỗi khi người lập trình thực hiện những xử lý được coi là không an toàn, những xử lý mà có thể là ngoài ý muốn.</li>
+			<li>Vô hiệu hoá các tính năng có thể gây nhầm lẫn, hoặc không nên được sử dụng.</li>
+			<li>Ngăn chặn sử dụng một số từ mà có thể sẽ được sử dụng làm keywork trong tương lai.</li>
+		</ul>
+		Bất lợi:
+		<ul>
+			<li>Mất đi tính đơn giản, mềm dẻo của ECMAScript thay vào đó là những qui tắc cứng nhắc</li>
+			<li>Khó tiếp cận với những người mới làm quen</li>
+		</ul>
+		Tham khảo:<br>
+		<a href="https://kungfutech.edu.vn/bai-viet/khoa-hoc-javascript/strict-mode-trong-javascript/">
+				https://kungfutech.edu.vn/bai-viet/khoa-hoc-javascript/strict-mode-trong-javascript/
+		</a>
+		<a href="https://niithanoi.edu.vn/strict-mode-trong-javascript.html">
+			https://niithanoi.edu.vn/strict-mode-trong-javascript.html
+		</a>
+	</P>
+	<h3>What are the differences between `==` and `===`? Write an example for each case (if any)?</h3>
+	<p>
+		<p>== : so sánh giá trị của 2 phần tử</p> 
+		<span>console.log("4" == 4) ==> true</span>
+		<p>=== : so sánh giá trị & kiểu dữ liệu của 2 phần tử</p>
+		<span>console.log("4" === 4) ==> flase</span>
+	</p>
+	<p>
+		<h3>Give a list of `Falsy` values in Javascript.</h3>
+		<p>=> " ", 0, null, undefined, NaN, flase</p>
+	</p>
+</body>
+
+</html>
