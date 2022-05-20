@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.test-attr::after {
+    content: attr(href);
+}
+
+.test-calc {
+    background-color: rgba(0, 99, 71, 0.6);
+    height: 200px;
+    width: calc(100% - 400px);
+}
+
+.test-rgb {
+    color: rgb(180, 0, 71);
+}
+
+.test-calc:hover {
+    transform: rotate(20deg);
+}
+
+.test-scale {
+    transition: transform linear 0.2s;
+}
+
+.test-scale:hover {
+    transform: scale(1.05);
+}
+
+.test-translate,
+.test-translate1,
+.test-translate2 {
+    height: 86px;
+    background-color: rgb(219, 16, 202);
+    position: relative;
+    margin-top: 46px;
+}
+
+.test-translate img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.test-translate1 img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.test-translate2 img {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.box {
+    margin-top: 46px;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, red, yellow);
+    display: inline-block;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(red, yellow);
+    margin-left: 16px;
+    display: inline-block;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(red, yellow, green);
+    margin-left: 16px;
+    display: inline-block;
+}
+
+.box4 {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+    margin-left: 16px;
+    display: inline-block;
+}
