@@ -1,0 +1,38 @@
+.tb-info {
+	width: 100%;
+	border-collapse: collapse;
+}
+.tb-info th,
+td {
+	padding: 8px;
+	text-align: center;
+  background-color: antiquewhite;
+  border-bottom: 1px solid white;
+}
+.title-tb {
+  font-size: 26px;
+  margin: 36px 0 16px 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--primary-color);
+}
+.tb-info th {
+	background-color: var(--primary-color);
+	color: var(--while-color);
+}
+tr td:nth-child(2) {
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+tr td:nth-child(2) img {
+	width: 62px;
+}
+td > button {
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding: 6px 36px;
+}
+td > button:hover {
+	background-color: var(--primary-color);
+}
+
