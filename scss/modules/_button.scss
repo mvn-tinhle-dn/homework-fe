@@ -1,0 +1,7 @@
+.btn-primary {
+  background-color: $primary-color;
+  color: $while-color;
+	&:hover {
+		opacity: 0.7;
+	}
+}

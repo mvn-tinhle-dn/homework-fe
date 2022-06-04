@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: $font-size-base;
+}
+body {
+  color: $black-color;
+  background-color: $while-color;
+  position: relative;
+}
