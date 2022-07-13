@@ -1,0 +1,140 @@
+/* Tablet */
+@media only screen and (max-width: 1023px) {
+	.header-nav {
+		height: 68px;
+	}
+	.header-nav .fa-bars {
+		display: inline-block;
+		font-size: 20px;
+		line-height: 68px;
+	}
+	.header-nav .logo {
+		float: unset;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		line-height: 68px;
+	}
+	.header-menu {
+		display: none;
+	}
+	.header-actions {
+		display: none;
+	}
+	.intro-list {
+		height: unset;
+	}
+	.item-text {
+		left: 16px;
+	}
+	.footer-middle-contact {
+		width: 50%;
+	}
+	.col-2 {
+		width: 25%;
+	}
+	.section-slideshow {
+		margin-top: 68px;
+	}
+	.footer-middle-signup {
+		margin-top: 46px;
+	}
+	.footer-bottom {
+		margin-bottom: 56px;
+	}
+	.footer-bottom p {
+		display: block;
+		text-align: center;
+	}
+	.footer-menu {
+		text-align: center;
+		float: none;
+	}
+	.menu-mobile {
+		position: fixed;
+		height: 56px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		background-color: var(--while-color);
+		box-shadow: 0 0 9px rgb(0 0 0 / 12%);
+	}
+	.menu-mobile-item {
+		text-align: center;
+		line-height: 46px;
+		font-size: 24px;
+		color: #222;
+		padding-bottom: 10px;
+	}
+	.menu-mobile-item:hover {
+		color: var(--primary-color);
+		border-top: 4px solid var(--primary-color);
+	}
+	.menu-mobile-item p {
+		line-height: 0;
+		font-size: 14px;
+	}
+	.menu-mobile {
+		display: block;
+	}
+}
+
+/* Mobile - L */
+@media only screen and (max-width: 767px) {
+	.col-4 {
+		width: 100%;
+	}
+	.col-3 {
+		width: 50%;
+	}
+	.footer-bottom .container {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0px 46px;
+	}
+}
+
+/* Mobile - S */
+@media only screen and (max-width: 479px) {
+	.col-3 {
+		width: 100%;
+	}
+	.middle-contact-mobile {
+		display: block;
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+	}
+	.middle-contact-mobile h3 {
+		display: inline-block;
+	}
+	.middle-contact-mobile .fa-caret-down {
+		float: right;
+	}
+	.contact-list {
+		display: none;
+	}
+	.footer-middle-col {
+		width: 100%;
+		margin-top: 16px;
+	}
+	.footer-middle-col ul {
+		display: none;
+	}
+	.footer-middle-col h3 {
+		display: inline-block;
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+	}
+	.footer-middle-col i {
+		display: inline-block;
+		font-size: 20px;
+		float: right;
+	}
+	.footer-middle-signup {
+		width: 100%;
+		text-align: center;
+	}
+
+}
